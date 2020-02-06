@@ -1,0 +1,27 @@
+IO Redirection 
+I: input
+O: output 
+Redirection: 방향을 바꾼다.(파일에 저장한다.)
+
+### input ###
+ls -l > 텍스트이름: ls -l의 결과를 텍스트에 저장한다(덮어쓰기).
+
+>(1>): standard error는 Redirection 할 수 없다.
+ (ex. ls -al > /dev/null: 실행결과를 아무곳에도 출력하지 않는다.)
+2>: standard error를 Redirection 할 수 있다.
+ (ex. rm re2.txt 1> re.txt 2> er.log: rm re2.txt의 내용은 re.txt에 에러는 er.log에 저장 )
+
+>>: 내용 추가
+
+program: 컴퓨터 하드디스크, ssd에 저장되어 있는 코드
+process: program이 실행되고 있는 상태(1grogram에 여러개의 process있음)
+
+
+### output ###
+cat 파일이름: 파일 내용을 출력해준다.(명령어의 인자(command line)를 준다.)
+cat < 파일이름: 파일에 저장되있는 내용을 입력으로 받는다.(입력(standard input)를 준다.)
+cat 입력: 키보드로 입력한 것을 출력한다.(나가기 ctrl+d)
+
+head 파일이름: 파일내용 10줄 출력
+head -n1 파일이름: 파일내용을 1줄만 출력
+(ex. head -n1 < linux.txt > one.txt: linux파일 첫행을 one파일에 저장)
