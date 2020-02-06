@@ -1,0 +1,17 @@
+package manager
+
+package install program, install file
+
+### apt ###
+sudo apt-get 
+ update: apt의 프로그램 목록을 최신 상태로 유지
+ install: 프로그램 다운 
+ upgrade: 프로그램 업그레이드 
+ remove: 프로그램 삭제 
+
+sudo apt-cache search 이름: 이름과 관련된 package목록을 보여준다.
+
+top: 현재 프로그램에서 실행되고 있는 것(작업관리자)
+htop: top보다 더 자세하게 보여준다.
+
+### yum ###

@@ -1,0 +1,13 @@
+### wget ###
+- url을 이용해서 파일을 다운 받을 수 있다.
+
+wget 
+ 파일url: 파일 다운로드
+ -O 저장하고싶은이름 파일url: 저장하고 싶은 이름으로 저장
+
+
+### git ###
+- 버전관리 시스템 
+
+git clone git주소 react_src: react_src에 해당 git 다운로드
+
