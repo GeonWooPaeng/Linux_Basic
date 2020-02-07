@@ -1,0 +1,19 @@
+
+Hardware < Kernel < Shell < Process 
+
+Kernel: 하드웨어 조작
+
+Shell: 사용자와 Kernel사이의 인터페이스 역할(명령어 해석기)
+
+echo 
+ 문자: 문자를 출력 
+ $0: shell 명이 출력 
+
+<shell 명>
+ bash: bash라는 shell이 동작하는 상태
+  cd + tabkey 입력시 숨김 디렉토리 표현
+ 
+ zsh: zsh라는 shell이 동작하는 상태
+      (zsh후 입력하는 명령들은 kernel로 전달 -> kernel에서 만들어진 결과는 zsh을 통해서 화면에 전달된다.)
+  cd + tabkey 입력시 숨김 디렉토리 표현 안됨
+  cd /h/u/w + tabkey -> cd /home/ubuntu/why(편리함)
