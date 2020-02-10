@@ -1,0 +1,22 @@
+cron: 정기적으로 명령을 실행시켜주는 도구(소프트웨어)
+
+crontab
+ -e: cron 사용(editor에 적어주면 된다.)
+ -l: list내용 출력
+
+
+### editor안에 
+m(min) h(hour) dom(day of month) mon(month) dow(요일) command
+*: 시간과 상관없이 실행
+ex) */1: 1분에 한번, 10 1: 1시 10분에 실행
+
+date: 현재 시간 출력 
+
+
+### cron이 잘 실행 되는 지 확인하기 
+cd ~
+tail -f 파일:자동으로 파일을 감시하고 있다가 파일 뒤쪽에 text추가시 자동으로 화면에 refresh한다.
+ctrl + c: 빠져나가기 
+
+
+

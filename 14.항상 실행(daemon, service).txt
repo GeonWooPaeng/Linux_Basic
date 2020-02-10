@@ -1,0 +1,16 @@
+daemon(service): 항상 실행되고 있는 프로그램 
+                ex)server 
+
+/etc/init.d: daemon프로그램들이 위치한 디렉토리
+
+sudo service daemon프로그램이름 start: daemon프로그램 켜기 
+sudo service daemon프로그램이름 stop: daemon프로그램 끄기
+
+ps aux: 현재 실행되고 있는 프로세스 list 출력
+ex) ps aux | grep apache2 (apache2리스트만 본다.)
+
+컴퓨터 켜질때 daemon 자동실행확인 
+
+cd rc3.d/링크: 콘솔로 구성된 곳에 해당 링크 자동으로 실행 되게 한다. 
+cd rc5.d/링크: gui로 구성 된 곳에 해당 링크 자동으로 실행 되게 한다.
+(링크에서 앞 S-자동으로 켜진것 K-자동으로 켜지지 않은것 ,다음 번호는 순서)
