@@ -1,0 +1,5 @@
+alias: 별명을 지어준다(단축키로 만들기)
+ (ex. l='ls -al: l을 입력하면 ls -al이 실행된다.) 
+
+cd ~
+nano .bashrc: 쉘이 실행될때 쉘 프로그램이 bashrc안의 코드를 실행한다.

@@ -1,0 +1,17 @@
+super(root) user: 관리자
+su: 관리자 되기
+ - root: 관리자 비밀번호치고 관리자 되기 
+
+user: 일반 사용자($표시)
+sudo: 관리자 권한 받기 
+
+ubuntu에서 
+sudo passwd -u root: 관리자lock 풀기
+sudo passwd -l root: 관리자lock 걸기
+
+### 사용자의 추가 ### 
+https://www.cyberciti.biz/faq/unix-create-user-account/
+
+sudo useradd -m duru: duru라는 사용자 디렉토리 만들기 
+sudo passwd duru: duru passward 설정 
+sudo usermod -a -G sudo duru: duru가 sudo 명령어 사용할 수 있게 해준다.
