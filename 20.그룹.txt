@@ -1,0 +1,19 @@
+특정 사용자를 지정하고 싶을 때 group을 지정해서 한다.
+
+https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
+
+groupadd [option] group: 사용자를 group에 넣는기능
+ex)sudo groupadd developer
+
+nano /etc/group: group 확인 하기 
+(/etc/group: group에 관한 내용 있는 곳)
+
+usermod: 존재하는 사용자를 수정한다.
+ -a -G developer egoing: developer 그룹에(-G) egoing(사용자)를 추가한다(-a).
+
+
+### change directory in group ###
+chown: 파일의 owner 와 group을 change 한다.
+ ex) chown 현재group(root):바꿀group(developer)
+
+
