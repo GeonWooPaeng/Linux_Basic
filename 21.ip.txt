@@ -1,0 +1,21 @@
+domain_name: ip의 이름
+ex. 전화번호(ip), 이름(domain_name)
+
+
+ip addr: 자신의 ip를 알아내는 법(inet부분)
+(컴퓨터에 부여된 실제(자기자신) ip)
+ip:127.0.0.1(자신의 컴퓨터ip)
+domain_name: localhost(자신의 컴퓨터 domain_name)
+
+
+curl 주소: 다음 내용(주소)을 접속하게 해준다. 
+ex. curl ipinfo.io/ip: ip알려준다. 
+(외부에 접속할때 사용하는 ip)
+
+curl == ip addr: 실제 ip와 외부사용 ip가 같은것
+curl != ip addr
+: 통신사에서 router(공유기)로 ip(curl)를 받고 router에서 ip를 여러개 만(ip addr)들어서 각 기기에 보내준다. 
+(router를 같이 사용하고 있는 기기끼리 연결 가능)
+
+웹에서 ipinfo.io: 어떤 ip로 접속했는지 알려주는 것
+

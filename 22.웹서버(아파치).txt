@@ -1,0 +1,15 @@
+생활코딩: https://opentutorials.org/course/2598/14446
+
+sudo service apache2 start: apache 켜기
+sudo service apache2 stop: apache 끄기
+sudo service apache2 restart: apache 다시 켜기
+
+sudo apt-get install elinks
+elinks: 쉘 환경에서 웹 브라우징을 할 수 있는 방법
+elinks http://ip주소/: 자신의 웹서버에 자신의 ip로 접속하는 것을 확인하는 방법
+
+
+/etc: 동작 방법 설정 저장공간 
+document root: 웹페이지를 찾는 최상위 디렉토리
+웹 관련 내용을 log(error,access)파일에 기록하겠다.
+

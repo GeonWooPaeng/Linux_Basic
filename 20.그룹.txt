@@ -17,3 +17,6 @@ chown: 파일의 owner 와 group을 change 한다.
  ex) chown 현재group(root):바꿀group(developer)
 
 
+
+
+
