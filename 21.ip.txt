@@ -10,7 +10,7 @@ domain_name: localhost(자신의 컴퓨터 domain_name)
 
 curl 주소: 다음 내용(주소)을 접속하게 해준다. 
 ex. curl ipinfo.io/ip: ip알려준다. 
-(외부에 접속할때 사용하는 ip)
+(외부에 접속할때 사용하는 ip, 우리 컴퓨터가 사용하는 공개 ip)
 
 curl == ip addr: 실제 ip와 외부사용 ip가 같은것
 curl != ip addr

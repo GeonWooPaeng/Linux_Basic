@@ -1,0 +1,18 @@
+www/naver.com == www/naver.com:80
+80: port(포트)
+
+port(포트):특정 client에서 특정 서버와 연결하는 곳(구멍) 
+<포트 번호> - 대기하고 있다(Listen).
+(1024 이내 포트번호는 정해져 있다.)
+web: 80
+ssh: 22 
+...
+
+
+router쪽 ip: public ip address 
+각 기기쪽 ip: private ip address 
+
+port forwarding: 특정 port로 접속이 들어오면 그 접속을 어떤 특정한 기기로 전달한다.
+ 
+default gateway: 공유기가 가지고 있는 ip(router와 기기간에 연결된 ip들) 
+ip route: default gateway 알아내는 방법
