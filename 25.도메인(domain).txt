@@ -1,0 +1,36 @@
+host: 각각의 컴퓨터(client,server...)
+network: host가 모여있는 것
+internet: network가 모여있는 것
+
+hosts file: host의 이름이 각각 어떤 ip를 가지는지 적어놓은 곳(DNS에 접속하기 전에 먼저 접속한다.)
+/etc/hosts: 일시적으로 어떤 특정한 domain의 ip를 자신만 바꿔서 써야할 때 사용
+host domain_name: domain_name의 ip를 알려준다.
+
+DNS(domain name system): domain name을 네트워크 주소(ip)로 바꾸거나 그 반대로 변환 할수 있도록 하기 위한 것
+
+cat /etc/resolv.conf: 내가 사용하는(kt,skt...) 네트워크 ip가 나온다.
+
+domain 중복되는지 확인하고 구매하는 사이트:
+https://www.freenom.com/en/index.html?lang=en 
+
+
+prefix(sub_domain).name.domain_name: 하나의 domain을 구입해서 여러개의 사이트(서버)를 사용할 수 있다.
+ex. egoing.ga -> admin.egoing.ga , blog.egoing.ga ...
+
+dig +trace domain: domain의 ip를 조회한 것(root_DNS_list, domain_name_server의 목록, ip등을 알려준다.)
+    root_DNS_server  <-> DNS_server <-> client <-> server
+
+root_DSN_server: 같은 DNS server이며 여러대이다.
+(domain으로 통신할 수 있게 해주는 것)
+root_DNS_server: .com,.net은 누가 담당하는 지 알고 있다.
+(client에 연결된 DNS_server에는 root_DNS_list는 알고 있다.)
+root_domain: google.com. 에서 마지막 .(점), 보통 생략되어 있다.
+domain_name: .com, .net ...
+domain: google.com같은 형태
+
+DNS_server 동작방법
+1. root_DSN_server에서 자료(.) 받고 자료(.com) 보낸다
+2. .com_DSN_server에서 자료(.com)받고 자료(google.com)보낸다.
+3.(sub_domain일시) google.com_DNS_server에서 자료(google.com)받고 자료(prefix.google.com) 보낸다.
+4. 그리고 해당 정보의 ip를 client에 보내서 client가 해당정보 내용 server을 접속할 수 있도록 해준다.
+
