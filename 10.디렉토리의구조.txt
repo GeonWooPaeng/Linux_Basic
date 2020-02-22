@@ -1,8 +1,6 @@
 https://www.thegeekstuff.com/2010/09/linux-file-system-structure/
 
 
-
-
 /: Root라고 불리며 시작 디렉토리 
 /bin: 일반사용자들이 사용하는 프로그램이 있는 디렉토리
 (Binary: 실행가능한 프로그램)
